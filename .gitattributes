@@ -1,0 +1,42 @@
+# Handle line endings consistently across platforms
+
+# Default: store LF in Git, checkout with LF (Linux/macOS) or CRLF (Windows if editor expects it)
+* text=auto eol=lf
+
+# JavaScript, TypeScript, JSON, CSS, HTML, Markdown, YAML, etc. → force LF
+*.js   text eol=lf
+*.jsx  text eol=lf
+*.ts   text eol=lf
+*.tsx  text eol=lf
+*.json text eol=lf
+*.css  text eol=lf
+*.scss text eol=lf
+*.html text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+
+# Config files → force LF
+*.env         text eol=lf
+*.gitignore   text eol=lf
+*.gitattributes text eol=lf
+
+# Windows-only scripts → CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary files → don’t touch line endings
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.ico  binary
+*.svg  binary
+*.ttf  binary
+*.woff binary
+*.woff2 binary
+*.eot  binary
+*.pdf  binary
+*.zip  binary
+*.tar  binary
+*.gz   binary
